@@ -1,0 +1,185 @@
+/*Inter Font Style*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/*RESET*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*GENERAL*/
+button {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+
+  color: white;
+
+  box-shadow: 0px 4px 4px 0px #00000040;
+  cursor: pointer;
+}
+
+/*LAYOUT*/
+body{
+  position: relative;
+
+  
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  padding: 1rem;
+}
+
+.calculator {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1rem;
+
+  max-width: 450px;
+  padding: 2rem;
+
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+
+  background-color: #242530;
+}
+
+/*COMPONENTS*/
+.screen {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  border-radius: 20px;
+  height: 60px;
+  padding: 0.5rem;
+
+  font-size: 1.5rem;
+
+  background-color: #3A3F77;
+  color: white;
+
+  white-space: nowrap;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  column-gap: 2rem;
+
+  font-size: 2rem;
+}
+
+.left-keypad {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(35px, 65px));
+  gap: 1rem;
+}
+
+.left-keypad > button {
+  border-radius: 35px;
+
+
+  font-size: min(5vw, 24px);
+
+  background-color: #404258;
+}
+
+.right-keypad {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(25px, 50px));
+  gap: 1rem;
+}
+
+.right-keypad > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  padding: 0.3rem 0.8rem;
+
+  
+  font-size:  min(7vw, 32px);
+
+  background-color: #F49D1A;
+}
+
+.right-keypad button:nth-child(7), .right-keypad button:last-child{
+  border-radius: 100px;
+}
+
+.right-keypad button:last-child{
+  background-color: #B2B2B2;
+  color: black;
+}
+
+.left-keypad button:last-child, .right-keypad button:last-child, .right-keypad button:nth-child(7){
+  grid-column: 1/-1;
+}
+
+.history{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+
+  max-width: 200px;
+}
+
+.history > h2  {
+  margin-bottom: 10px;
+  padding-inline: 1rem;
+
+  color: white;
+  background-color: #242530;
+
+  text-align: center;
+}
+
+.clear-history{
+  display: flex;
+  justify-content: center;
+}
+
+.clear-history > button  {
+
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+
+  background-color: #242530;
+
+  cursor: pointer;
+}
+
+.history > p {
+  padding-inline: 1rem;
+}
+
+.history ul{
+  padding-left: 1rem;
+}
+
+
+@media screen and (max-width: 800px){
+  body{
+    justify-content: start;
+    gap: 3rem;
+  }
+
+  .history{
+    position: static;
+    top: 0;
+    left: 0;
+    align-self: self-start;
+  }
+}
