@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="CSS HandsOn Assessment for Altschool Nigeria">
+  <script src="./index.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap">
@@ -16,35 +17,35 @@
     <h1 class="hero__title">For individuals</h1>
     <p class="hero__text">Start benefiting from the wellness experience. For companies looking on increasing productivity, and improving organization wellness.</p>
   </section>
-  <form class="form__page form--grid" action="./" method="get" >
+  <form class="form__page form-grid" action="./" method="get" >
     <div class="form--flex">
       <label for="first-name">First Name</label>
-      <input class="form__input" type="text" placeholder="Tolu" name="first-name" id="first-name">
+      <input required id="first-name" class="form__input" type="text" placeholder="Tolu" name="first-name">
     </div>
     <div class="form--flex">
       <label for="last-name">Last Name</label>
-      <input class="form__input" type="text" placeholder="Tolaass" name="last-name" id="last-name">
+      <input id="last-name" required class="form__input" type="text" placeholder="Tolaass" name="last-name">
     </div>
     <div class="form--flex">
       <label for="gender">Gender</label>
-      <input class="form__input" type="text" placeholder="Select here" name="gender" id="gender">
+      <input id="gender" required class="form__input" type="text" placeholder="Select here" name="gender">
     </div>
     <div class="form--flex">
       <label for="date-of-birth">Date of Birth</label>
-      <input class="form__input" type="date" placeholder="Select here" name="date-of-birth" id="date-of-birth">
+      <input id="date-of-birth" required class="form__input" type="date" placeholder="Select here" name="date-of-birth">
     </div>
     <div class="form--flex">
       <label for="body-weight">Weight (KG)</label>
-      <input class="form__input" type="text" placeholder="Enter Weight" name="body-weight" id="body-weight">
+      <input id="body-weight" required class="form__input" type="text" placeholder="Enter Weight" name="body-weight">
     </div>
     <div class="form--flex">
       <label for="body-height">Height (CM)</label>
-      <input class="form__input" type="text" placeholder="Enter Height" name="body-height" id="body-height">
+      <input id="body-height" required class="form__input" type="text" placeholder="Enter Height" name="body-height">
     </div>
     <div class="form--flex">
-      <label for="body-height">Activity Level</label>
-      <select class="form__input" name="games" id="activity-levels">
-        <option selected >Select here</option>
+      <label for="activity-levels">Activity Level</label>
+      <select class="form__input" name="games" id="activity-levels" required>
+        <option value="" disabled selected >Select here</option>
         <option value="tennis">Tennis</option>
         <option value="chess">Chess</option>
         <option value="swimming">Swimming</option>
@@ -52,11 +53,11 @@
       </select>
     </div>
     <div class="form--flex">
-      <label for="body-height">Password</label>
-      <input class="form__input" type="password" placeholder="Password" name="body-height" id="body-height">
+      <label for="password">Password</label>
+      <input id="password" required class="form__input" type="password" placeholder="Password" name="body-height">
     </div>
     <div class="form--flex">
-      <button>Register</button>
+      <input required type="submit" class="submit__btn form__input" value="Register">
       <p class="footer__text">By clicking Register, you agree to our <a class="key-words" href="">Terms of Use</a> and our <a class="key-words" href="">Privacy Policy</a></p>
     </div>
   </form>
