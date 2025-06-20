@@ -1,73 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>CSS-HandsOn Assessment</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./index.css">
-</head>
-<body class="container">
-  <header class="header">
-    <div class="logo__frame">
+  <head>
+    <title>CSS-HandsOn Assessment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body class="container">
+    <header class="header">
       <a href="">
-        <img class="logo__icon" src="./images/53686b0b40dbd20438d891369ef0f4b1d4154e57.png" alt="WP Pusher" width="1055" height="207">
+        <div class="logo__frame">
+          <img class="logo__icon" src="./images/53686b0b40dbd20438d891369ef0f4b1d4154e57.png" alt="WP Pusher" width="1055" height="207">
+        </div>
       </a>
-    </div>
-    <nav class="nav__section">
-      <p class="nav__option"><a class="nav__link" href="">Download</a></p>
-      <p class="nav__option"><a class="nav__link" href="">Learn</a></p>
-      <p class="nav__option"><a class="nav__link" href="">Pricing</a></p>
-      <p class="nav__option"><a class="nav__link" href="">Help</a></p>
-      <button class="nav__btn">Account</button>
-    </nav>
-  </header>
-  <main class="panel">
-    <section class="checkout__box">
-      <div class="checkout__header checkout__divs">
-        <h2 class="checkout__title">
-          <a class="checkout__link" href="">Checkout</a>
-        </h2>
-      </div>
-      <form class="checkout__form checkout__divs" action="" method="get">
-        <div class="basic-info form__div">
-          <div class="form__header">
-            <div class="form__number">1</div>
-            <div class="form__title">Your Basic Information</div>
-          </div>
-          <div class="names">
-            <div class="box">
-              <label for="first-name">First Name</label>
-              <input type="text" placeholder="Jane" id="first-name">
+      <nav class="nav__bar">
+        <a href="" class="nav__link"><p class="nav__option">Download</p></a>
+        <a href="" class="nav__link"><p class="nav__option">Learn</p></a>
+        <a href="" class="nav__link"><p class="nav__option">Pricing</p></a>
+        <a href="" class="nav__link"><p class="nav__option">Help</p></a>
+        <a href="" class="nav__link"><p class="nav__option">Account</p></a>
+      </nav>
+    </header>
+    <main class="panel">
+      <section class="checkout">
+        <div class="checkout__header">
+          <a href="" class="checkout__link">
+            <h2 class="checkout__title">
+              Checkout
+            </h2>
+          </a>
+        </div>
+        <div class="checkout__main">
+          <form class="checkout__form" action="" method="get">
+            <div class="user-details">
+              <div class="form__header">
+                <div class="form__number">1</div>
+                <div class="form__title">Your Basic Information</div>
+              </div>
+              <div class="names">
+                <div class="name flex-column">
+                  <label for="first-name">First Name</label>
+                  <input type="text" placeholder="Jane" id="first-name">
+                </div>
+                <div class="name flex-column">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" placeholder="Doe" id="last-name">
+                </div>
+              </div>
+              <div class="mail flex-column">
+                <label for="email">E-mail</label>
+                <input type="text" placeholder="janedoe@example.com">
+              </div>
             </div>
-            <div class="box">
-              <label for="last-name">Last Name</label>
-              <input type="text" placeholder="Doe" id="last-name">
+            <div class="card-details">
+              <div class="form__header">
+                <div class="form__number">2</div>
+                <div class="form__title">Your Payment Information</div>
+              </div>
+              <div class="credit-card flex-column">
+                <label for="card-number">Credit Card</label>
+                <input type="text" placeholder="Card Number" id="card-number">
+              </div>
             </div>
+            <div class="submit">
+            <input class="submit__btn" type="submit" value="Buy WP Pusher">
+            </div>
+          </form>
+        </div>
+        <div class="checkout__footer">
+          <p class="contact">Need any help? <span>Don't hesitate to contact support!</span></p>
+          <p class="footer-tag">Powered by <span class="stripe">stripe</span></p>
+        </div>
+      </section>
+      <section  class="sidebar">
+        <div class="plan">
+          <h2>Freelancer</h2>
+          <div class="price">
+            <span class="dollar">$</span> <span class="nine-nine">99</span>
+            <span class="year">/ year</span>
           </div>
-          <div class="mail box">
-            <label for="email">E-mail</label>
-            <input type="text" placeholder="janedoe@example.com">
+          <p>Automatically renews after 1 year</p>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <div class="detail__marker">1</div>
+            <div class="detail__text">Use on <span>5</span> client site</div>
+          </div>
+          <div class="detail">
+            <div class="detail__marker">2</div>
+            <div class="detail__text">Private repositories</div>
+          </div>
+          <div class="detail">
+            <div class="detail__marker">3</div>
+            <div class="detail__text">Email support</div>
           </div>
         </div>
-        <div class="payment-info form__div">
-           <div class="form__header">
-            <div class="form__number">2</div>
-            <div class="form__title">Your Payment Information</div>
-          </div>
-          <div class="credit-card box">
-            <label for="card-number">Credit Card</label>
-            <input type="text" placeholder="Card Number" id="card-number">
+        <div class="switch">
+          <p class="switch__text-1">Need <span class="num">20</span> client sites?</p>
+          <p class="switch__text-2"><a href="">Switch to the <span class="agency">Agency</span> plan<span class="period">.</span></a></p>
+        </div>
+        <div class="quote">
+          <p class="quote__text">FTP is horrible to deal with. <span class="wp-pusher">WP Pusher</span> solves that issue, and the customer support is awesome!</p>
+          <div class="quote__speaker">
+            <div class="image__frame">
+              <img class="speaker__image" src="./images/e6b8b7d5b17304b9886abe165758c768c5b3f46c.png" alt="Kirk Beard" width="300" height="300">
+            </div>
+            <p class="speaker__name">Kirk Beard</p>
           </div>
         </div>
-        <div class="form__div"></div>
-      </form>
-      <div class="checkout__footer checkout__divs"></div>
-    </section>
-    <section  class="aside__box"></section>
-  </main>
-  
-</body>
+      </section>
+    </main>
+    <footer class="footer">© 2018 WP Pusher IVS  ·  <a href="">Terms of Service</a></footer>
+  </body>
 </html>
