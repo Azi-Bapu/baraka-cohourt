@@ -4,8 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "Lato", sans-serif;
-
   transition: all 0.3s ease-in-out;
 }
 
@@ -13,6 +11,8 @@
 
 /*GENERAL*/
 .container{
+  font-family: "Lato", sans-serif;
+
   color: #1D2C3C;
   background-color: #F5F8FA;
 }
@@ -170,8 +170,10 @@ label {
 }
 
 input[type ='text'] {
-  padding: 0.5rem 0.8rem;
+  width: 100%;
+  padding: 0.8rem;
   border: none;
+  border-radius: 5px;
 
   color: #1D2C3C;
   background-color: #EDEFF2;
@@ -231,6 +233,42 @@ input:placeholder-shown{
   padding: 0 2rem 2rem 2rem;
   margin-bottom: 20px;
   border-bottom: 2px solid #F5F7FA;
+}
+
+
+.card__inputs{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+/*
+.card__inputs input:focus-visible{
+  outline: none;
+  box-shadow: none;
+  transform: none;
+}
+*/
+
+.card__inputs input:nth-child(1){
+  flex: 1;
+
+  border-radius: 5px 0 0 5px;
+}
+
+.card__inputs input:nth-child(2), .card__inputs input:nth-child(3){
+  flex-basis: 60px;
+  
+  padding-inline: 0px;
+
+  text-align: center;
+}
+
+.card__inputs input:nth-child(2) {
+  border-radius: 0px;
+}
+
+.card__inputs input:nth-child(3) {
+  border-radius: 0 5px 5px 0;
 }
 
 .submit {

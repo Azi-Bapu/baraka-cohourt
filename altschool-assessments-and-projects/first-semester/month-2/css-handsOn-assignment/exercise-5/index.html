@@ -4,10 +4,10 @@
     <title>CSS-HandsOn Assessment</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
   </head>
   <body class="container">
     <header class="header">
@@ -61,8 +61,12 @@
                 <div class="form__title">Your Payment Information</div>
               </div>
               <div class="credit-card flex-column">
-                <label for="card-number">Credit Card</label>
-                <input type="text" placeholder="Card Number" id="card-number">
+                <label for="card__inputs">Credit Card</label>
+                <div class="card__inputs" id="card__inputs">
+                  <input type="text" placeholder="Card Number" id="card-number">
+                  <input type="text" placeholder="MM / YY" id="card-expiry-date">
+                  <input type="text" placeholder="CVC" id="card-cvc">
+                </div>
               </div>
             </div>
             <div class="submit">
