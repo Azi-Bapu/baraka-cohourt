@@ -1,0 +1,28 @@
+.row-2__frame{
+  margin: 0 auto;
+  max-width: 900px;
+
+  background-color: transparent;
+
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.row-2 {
+  padding: 0.4em 1.2em 1.2em;
+  border-bottom: 0.4em solid #999999;
+
+  background-color: white;
+}
+
+/*Still can figure how there's a little shadow below the row-2 title*/
+.row-2__title {
+  position: relative;
+  left: -2.25rem;
+
+  display: inline-block;
+
+  padding: 0.8em 1.5em;
+  border-bottom: 0.35em solid #CC9900;
+
+  background-color: #FFBF00;
+}

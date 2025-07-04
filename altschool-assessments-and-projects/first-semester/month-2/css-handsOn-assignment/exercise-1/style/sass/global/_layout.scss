@@ -1,0 +1,21 @@
+.page {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 3rem);
+  
+  padding-inline: clamp(1.56rem, 6.25vw, 6.25rem);
+  min-height: 100vh;
+}
+
+
+
+@media screen and (max-width: 800px){
+  .page {
+    flex-flow: column nowrap;
+    gap: clamp(3rem, 6vw, 6rem);
+
+    padding-inline: 0;
+  }
+}

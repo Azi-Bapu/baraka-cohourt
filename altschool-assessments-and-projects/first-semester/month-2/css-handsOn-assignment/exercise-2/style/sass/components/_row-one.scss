@@ -1,0 +1,10 @@
+.row-1__content{
+  margin: 0 auto;
+  padding: 1.2em;
+  max-width: 900px;
+}
+
+/*Limit the characters within the row-1 section*/
+.row-1__text {
+  max-width: 33ch;
+}
