@@ -92,7 +92,7 @@ function calculator(input){
     case '=':
       // Evaluate the strings and render on screen
       if(expression !== ''){
-        let result =  eval(expression);
+        let result =  eval(expression).toFixed(4);
       screenElement.innerHTML = `${expression} = ${result}`;
       fullHistory.push(`${expression} = ${result}`);              
 
